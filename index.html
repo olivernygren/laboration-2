@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script defer src="script.js"></script>
     <title>Oliver Nygren</title>
@@ -13,17 +14,32 @@
 
   <div class="jumbo-bg">
 
-    <header class="flex">
-      <h1 class="logo">Oliver Nygren</h1>
-      <nav class="fixed">
-        <ul class="nav__links">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">ABOUT ME</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="fixed"><button class="btn btn-nav">CONTACT</button></a>
-    </header>
+    <div class="desktop-menu">
+      <header class="flex">
+        <h1 class="logo">Oliver Nygren</h1>
+        <nav class="fixed">
+          <ul class="nav__links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="fixed"><button class="btn btn-nav">CONTACT</button></a>
+      </header>
+    </div>
+
+    <!-- HAMBURGER MENU -->
+    <div class="hamburger-menu">
+      <div class="flex">
+        <h1 class="logo">Oliver Nygren</h1>
+        <i id="menu" class="material-icons">menu</i>
+      </div>
+      <ul class="hamburger-menu flex">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+      </ul>
+    </div>
 
     <div class="jumbo-text-area">
       <h2>ASPIRING FRONT END DEVELOPER</h2>

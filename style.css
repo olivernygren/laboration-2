@@ -16,14 +16,12 @@ body {
 li, a {
     color: var(--clr-text-light);
     text-decoration: none;
-    /* font-size: 0.9rem; */
     font-weight: 600;
 }
 
 button {
     color: var(--clr-text-light);
     text-decoration: none;
-    /* font-size: 0.9rem; */
     font-weight: 600;
 }
 
@@ -55,6 +53,8 @@ header {
     padding: 1rem 5%;
     position: relative;
     z-index: 10000;
+    padding-top: 2.5rem;
+    /* background-color: rgba(255, 255, 255, 0.267); */
 }
 
 
@@ -65,7 +65,7 @@ header {
     font-family: 'Playfair Display', serif;
     cursor: pointer;
     color: var(--clr-text-light);
-    margin-right: auto;
+    margin-right: 70%;
     font-size: clamp(1.5rem, 2.25vw, 3rem);
     text-transform: uppercase;
     font-weight: 700;
@@ -89,7 +89,7 @@ header {
 }
 
 .nav__links li a:hover {
-    color:  var(--clr-text-black);
+    color:  var(--clr-text-dark);
     text-shadow: none;
 }
 
@@ -115,7 +115,6 @@ header {
 .hamburger-menu i {
     padding: 1rem;
     cursor: pointer;
-    text-shadow: ;
 }
 
 /* BUTTONS ======================================================== */
@@ -199,6 +198,7 @@ header {
 }
 
 
+
 /* MEDIA QUERIES ======================================= */
 
 /* Hides the desktop menu on screen-sizes of 800px or smaller */
@@ -220,3 +220,13 @@ header {
         display: none;
     }
 }
+
+
+/* TO-DO LIST
+
+Fix hamburger menu
+add main and footer
+add picture of me, rounded, on jumbo-bg
+fixed header
+
+*/

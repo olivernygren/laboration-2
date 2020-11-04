@@ -13,7 +13,7 @@ body {
     --clr-text-tint: rgb(200, 200, 200);
 }
 
-li, a {
+a {
     color: var(--clr-text-light);
     text-decoration: none;
     font-weight: 600;
@@ -47,16 +47,6 @@ button {
 
 /* HEADER ========================================================== */
 
-/* header {
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.5rem 5%;
-    position: relative;
-    z-index: 10000;
-    background-color: rgba(255, 255, 255, 0.267);
-    height: 2rem;
-} */
-
 header {
     text-align: center;
     height: 5rem;
@@ -70,7 +60,7 @@ header {
 header.active {
     text-align: center;
     height: 5rem;
-    background-color: rgb(65, 65, 65);
+    background-color: var(--clr-text-dark);
     width: 100%;
     z-index: 10000;
     position: fixed;
@@ -92,7 +82,6 @@ header.active {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--clr-text-light);
-    letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 1px 1px 6px rgb(54, 54, 54);
 }
@@ -106,7 +95,7 @@ nav {
 nav a {
     text-decoration: none;
     font-size: clamp(0.75rem, 1.1vw, 3rem);
-    margin: 0 10px;
+    margin: 0 15px;
     color: var(--clr-text-light);
     text-shadow: 1px 1px 6px rgb(54, 54, 54);
     transition: all 300ms ease-in-out 0s;
@@ -119,26 +108,32 @@ nav a:hover {
 
 /* HAMBURGER MENU ================================================ */
 
+.hamburger-menu {
+    text-align: center;
+    height: 100%;
+}
 
-#menu {
+#menu-icon {
     color: white;
+    float: right;
 }
 
-.hamburger-menu ul {
+.hamburger-menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
-
-.hamburger-menu li {
-    list-style: none;
-}
-
-.hamburger-menu h1 {
-    padding: 0 1rem;
+    display: none;
 }
 
 .hamburger-menu i {
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
+    border-radius: 100px;
+    background-color: var(--clr-btn);
+    box-shadow: 2px 2px 6px rgba(66, 66, 66, 0.418);
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 /* BUTTONS ======================================================== */
@@ -204,6 +199,7 @@ nav a:hover {
     left: 40%;
     transform: translate(-50%, -50%);
     color: var(--clr-text-light);
+    margin-top: 7rem;
 }
 
 .jumbo-text-area p {
@@ -223,6 +219,11 @@ nav a:hover {
 
 /* MAIN ====================================================== */
 
+main {
+    height: 40rem;
+    background-color: var(--clr-text-tint)
+}
+
 /* .divider {
     display: flex;
     justify-content: center;
@@ -236,12 +237,12 @@ nav a:hover {
     z-index: 1000;
 } */
 
-main {
-    height: 40rem;
-    background-color: rgb(221, 221, 221);
+/* FOOTER ============================================================= */
+
+footer {
+    height: 10rem;
+    background-color: var(--clr-text-dark);
 }
-
-
 
 
 
@@ -253,6 +254,18 @@ main {
 @media (max-width: 800px) {
     .desktop-menu {
         display: none;
+    }
+
+    .jumbo-bg {
+        height: 100vh;
+    }
+
+    .jumbo-text-area {
+        top: 33%;
+    }
+
+    .logo {
+        margin-left: 1rem;
     }
 }
 

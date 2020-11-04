@@ -60,10 +60,21 @@ button {
 header {
     text-align: center;
     height: 100px;
-    background-color: rgba(113, 167, 218, 0.315);
+    background-color: rgba(255, 255, 255, 0);
     width: 100%;
     z-index: 10000;
     position: fixed;
+    transition: all 500ms;
+}
+
+header.active {
+    text-align: center;
+    height: 100px;
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
+    transition: all 500ms;
 }
 
 /* NAV ============================================================= */
@@ -243,6 +254,30 @@ nav a:hover {
     font-weight: 800;
     text-shadow: 2px 2px 6px rgb(54, 54, 54);
 }
+
+/* MAIN ====================================================== */
+
+.divider {
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line {
+    height: 10px;
+    background-color: rgb(61, 61, 61);
+    width: 75%;
+    margin-top: -0.25em;
+    z-index: 1000;
+}
+
+main {
+    height: 40rem;
+    background-color: rgb(221, 221, 221);
+}
+
+
+
+
 
 
 

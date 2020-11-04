@@ -47,32 +47,59 @@ button {
 
 /* HEADER ========================================================== */
 
-header {
+/* header {
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 1.5rem 5%;
     position: relative;
     z-index: 10000;
-    padding-top: 2.5rem;
-    /* background-color: rgba(255, 255, 255, 0.267); */
+    background-color: rgba(255, 255, 255, 0.267);
+    height: 2rem;
+} */
+
+header {
+    text-align: center;
+    height: 100px;
+    background-color: rgba(113, 167, 218, 0.315);
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
 }
-
-
 
 /* NAV ============================================================= */
 
-.logo {
+/* .logo {
     font-family: 'Playfair Display', serif;
     cursor: pointer;
     color: var(--clr-text-light);
-    margin-right: 70%;
+    margin-right: 71%;
+    margin-left: 1rem;
     font-size: clamp(1.5rem, 2.25vw, 3rem);
     text-transform: uppercase;
     font-weight: 700;
     text-shadow: 1px 1px 6px rgb(54, 54, 54);
+    line-height: 2rem;
+} */
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
 }
 
-.nav__links {
+.logo a {
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2.25vw, 3rem);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--clr-text-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px rgb(54, 54, 54);
+}
+
+
+/* .nav__links {
     list-style: none;
     margin-right: 8rem;
 }
@@ -90,6 +117,25 @@ header {
 
 .nav__links li a:hover {
     color:  var(--clr-text-dark);
+    text-shadow: none;
+} */
+
+nav {
+    float: right;
+    line-height: 100px;
+    margin-right: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: clamp(0.75rem, 1.1vw, 3rem);
+    margin: 0 10px;
+    color: var(--clr-text-light);
+    text-shadow: 1px 1px 6px rgb(54, 54, 54);
+}
+
+nav a:hover {
+    color: var(--clr-text-dark);
     text-shadow: none;
 }
 

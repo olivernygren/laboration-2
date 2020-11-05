@@ -74,6 +74,7 @@ header.active {
     width: 30%;
     float: left;
     line-height: 5rem;
+    white-space: nowrap;
 }
 
 .logo a {
@@ -110,7 +111,6 @@ nav a:hover {
 
 .hamburger-menu {
     text-align: center;
-    height: 100%;
 }
 
 #menu-icon {
@@ -124,6 +124,14 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
     display: none;
+    background-color: var(--clr-text-dark);
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+.hamburger-menu-nav a {
+    padding: 2rem 0;
+    font-size: 20px;
 }
 
 .hamburger-menu i {
@@ -199,7 +207,6 @@ nav a:hover {
     left: 40%;
     transform: translate(-50%, -50%);
     color: var(--clr-text-light);
-    margin-top: 7rem;
 }
 
 .jumbo-text-area p {
@@ -224,19 +231,6 @@ main {
     background-color: var(--clr-text-tint)
 }
 
-/* .divider {
-    display: flex;
-    justify-content: center;
-}
-
-.divider-line {
-    height: 3px;
-    background-color: rgb(61, 61, 61);
-    width: 75%;
-    margin-top: .5em;
-    z-index: 1000;
-} */
-
 /* FOOTER ============================================================= */
 
 footer {
@@ -251,7 +245,7 @@ footer {
 /* MEDIA QUERIES ======================================= */
 
 /* Hides the desktop menu on screen-sizes of 800px or smaller */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .desktop-menu {
         display: none;
     }
@@ -261,16 +255,30 @@ footer {
     }
 
     .jumbo-text-area {
-        top: 33%;
+        text-align: center;
+        left: 50%;
+        top: 55%;
+    }
+
+    .btn-jumbo-1 {
+        margin-bottom: 1rem;
+    }
+
+    .btn-nav {
+        margin-bottom: 1rem;
+        margin-left: 0;
+        font-size: 20px;
+        padding: 0.5rem 1.5rem;
     }
 
     .logo {
-        margin-left: 1rem;
+        margin-top: -0.25rem;
+        margin-left: 1.5rem;
     }
 }
 
 /* Hides the hamburger menu on screen-sizes of 801px or bigger */
-@media (min-width: 801px) {
+@media (min-width: 769px) {
     .hamburger-menu {
         display: none;
     }
@@ -279,8 +287,23 @@ footer {
 
 /* TO-DO LIST
 
-Fix hamburger menu
-add main and footer
-add picture of me, rounded, on jumbo-bg
+
 
 */
+
+
+/* Problem att lösa:
+
+display: none; by default
+onclick: visa .hamburger-menu-nav (ta bort 'display: none'), 
+   visa inte jumbo-bg-text-area (lägg till 'display: none')
+
+kanske sätta overflow-y: hidden?
+
+*/
+
+
+
+.display-none {
+    display: none;
+}

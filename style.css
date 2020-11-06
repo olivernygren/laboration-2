@@ -123,10 +123,13 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: none;
     background-color: var(--clr-text-dark);
     height: 100vh;
     padding-top: 2rem;
+
+    transition: all 200ms ease-in-out;
+    
+    /* display: none; */
 }
 
 .hamburger-menu-nav a {
@@ -289,20 +292,7 @@ footer {
 
 /* TO-DO LIST
 
-
-
-*/
-
-
-/* Problem att lösa:
-
-bakgrundsbild visas ej i github pages (mapp i mapp?)
-
-display: none; by default
-onclick: visa .hamburger-menu-nav (ta bort 'display: none'), 
-   visa inte jumbo-bg-text-area (lägg till 'display: none')
-
-kanske sätta overflow-y: hidden?
+    Hamb-meny animation
 
 */
 
@@ -310,4 +300,5 @@ kanske sätta overflow-y: hidden?
 
 .display-none {
     display: none;
+    overflow-y: hidden;
 }

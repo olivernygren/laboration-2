@@ -32,12 +32,13 @@ const jumboText = document.getElementById('jumbo-text');
 
 menuIcon.onclick = function() {
 
-    if (/* om .hamburger-menu-nav har klassen .display-none (inte visas) */) {
+    if (mobileNav.classList.contains('display-none')) {
         mobileNav.classList.remove('display-none'); /* visa nav:en */
         jumboText.classList.add('display-none'); /* ta bort jumbo-texten */
 
-    } else { /* om .hamburger-menu-nav inte har klassen .display-none (visas*/
+    } else { 
         mobileNav.classList.add('display-none'); /* dölj nav:en */
         jumboText.classList.remove('display-none'); /* visa jumbo-texten */
     }
 }
+

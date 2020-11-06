@@ -111,11 +111,21 @@ nav a:hover {
 
 .hamburger-menu {
     text-align: center;
+    transition: all 200ms ease-in-out;
+
 }
 
 #menu-icon {
     color: white;
     float: right;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: var(--clr-btn);
+    box-shadow: 2px 2px 6px rgba(66, 66, 66, 0.418);
+    margin-top: 1rem;
+    margin-right: 1rem;
+    transition: all 300ms ease-in-out;
 }
 
 .hamburger-menu-nav {
@@ -129,7 +139,6 @@ nav a:hover {
 
     transition: all 200ms ease-in-out;
     
-    /* display: none; */
 }
 
 .hamburger-menu-nav a {
@@ -137,15 +146,7 @@ nav a:hover {
     font-size: 20px;
 }
 
-.hamburger-menu i {
-    padding: 0.5rem;
-    cursor: pointer;
-    border-radius: 100px;
-    background-color: var(--clr-btn);
-    box-shadow: 2px 2px 6px rgba(66, 66, 66, 0.418);
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
+
 
 /* BUTTONS ======================================================== */
 
@@ -230,8 +231,36 @@ nav a:hover {
 /* MAIN ====================================================== */
 
 main {
+    background-image: url(./Filer/Bilder/palm-trees-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    z-index: 5;
+
     height: 40rem;
     background-color: rgb(236, 236, 236);
+}
+
+main img {
+    height: 16rem;
+    z-index: 10;
+    border: 5px solid var(--clr-btn);
+    border-radius: 1000px;
+    box-shadow: 3px 3px 10px rgb(29, 29, 29);
+}
+
+main h2 {
+    color: var(--clr-text-light);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.75rem, 3.4vw, 5rem);
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 6px rgb(54, 54, 54);
+}
+
+main p {
+    color: var(--clr-text-light);
 }
 
 /* FOOTER ============================================================= */
@@ -293,6 +322,8 @@ footer {
 /* TO-DO LIST
 
     Hamb-meny animation
+    innehåll på main
+    innehåll på footer
 
 */
 

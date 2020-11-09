@@ -1,11 +1,4 @@
-// const menuIcon = document.getElementById('menu-icon');
-
-// menuIcon.onclick = function() {
-    
-// }
-
-
-
+/* Gives the transparent header a background color when user scroll past 50px down on the page */
 
 const header = document.getElementById('header');
 const headerMobile = document.getElementById('header-mobile');
@@ -25,6 +18,7 @@ window.onscroll = function() {
 }
 
 
+/* Hamburger menu */
 
 const menuIcon = document.getElementById('menu-icon');
 const mobileNav = document.getElementById('mobile-nav');

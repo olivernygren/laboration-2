@@ -261,12 +261,12 @@ main img {
     box-shadow: 3px 3px 10px rgb(29, 29, 29);
     position: absolute;
     top: 25%;
-    left: calc(100% - 16.5rem);
+    left: calc(100% - 18rem);
 }
 
 main h3 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.25rem, 4vw, 3rem);
+    font-size: clamp(1.25rem, 3vw, 3rem);
     margin: 0;
     font-weight: 800;
     text-shadow: 2px 2px 6px rgb(54, 54, 54);
@@ -275,14 +275,14 @@ main h3 {
 main p {
     font-size: clamp(.9rem, 1.25vw, 2rem);
     line-height: 1.5rem;
+    font-weight: 500;
 }
 
 .main-text-area {
     color: var(--clr-text-light);
-    /* background-color: rgba(0, 0, 0, 0.253); */
     padding: 5rem 3rem;
     margin-left: 5rem;
-    margin-right: 8rem;
+    margin-right: 16rem;
     z-index: 10;
 
     position: relative;
@@ -291,7 +291,6 @@ main p {
 /* FOOTER ============================================================= */
 
 footer {
-    height: 10rem;
     background-color: var(--clr-text-dark);
     text-align: center;
 }
@@ -303,10 +302,15 @@ footer i {
     padding: 0.8rem;
     border-radius: 100px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.438);
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     cursor: pointer;
+    transition: all 300ms ease-in-out 0s;
 }
 
+footer i:hover {
+ background-color: rgb(68, 149, 187);
+}
 
 
 /* MEDIA QUERIES ======================================= */
@@ -374,6 +378,17 @@ footer i {
     }
 }
 
+/* MOBILE PHONES */
+@media (max-width: 440px) {
+    main img {
+        top: 11%;
+    }
+
+    .jumbo-text-area {
+        padding-top: 40%;
+    }
+}
+
 /* Hides the hamburger menu on screen-sizes of 801px or bigger */
 @media (min-width: 769px) {
     .hamburger-menu {
@@ -385,8 +400,7 @@ footer i {
 /* TO-DO LIST
 
     Hamb-meny animation
-    innehåll på main
-    innehåll på footer
+
 
 */
 

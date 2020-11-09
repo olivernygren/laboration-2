@@ -129,7 +129,7 @@ nav a:hover {
     border-radius: 100px;
     background-color: var(--clr-btn);
     box-shadow: 2px 2px 6px rgba(66, 66, 66, 0.418);
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     margin-right: 1rem;
     transition: all 300ms ease-in-out;
 }
@@ -148,6 +148,11 @@ nav a:hover {
 }
 
 .hamburger-menu-nav a {
+    padding: 2rem 0;
+    font-size: 20px;
+}
+
+.hamburger-menu-nav {
     padding: 2rem 0;
     font-size: 20px;
 }
@@ -228,7 +233,7 @@ nav a:hover {
 
 .jumbo-text-area h2 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 3.25vw, 4rem);
+    font-size: clamp(2rem, 3.25vw, 4rem);
     margin: 0;
     font-weight: 800;
     text-shadow: 2px 2px 6px rgb(54, 54, 54);
@@ -245,12 +250,11 @@ main {
     z-index: 5;
     position: relative;
 
-    height: 40rem;
     background-color: var(--clr-text-dark);
 }
 
 main img {
-    height: 16rem;
+    width: 16rem;
     z-index: 9;
     border: 5px solid var(--clr-btn);
     border-radius: 1000px;
@@ -260,12 +264,17 @@ main img {
     left: calc(100% - 16.5rem);
 }
 
-main h2 {
+main h3 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.75rem, 3.4vw, 5rem);
+    font-size: clamp(1.25rem, 4vw, 3rem);
     margin: 0;
     font-weight: 800;
     text-shadow: 2px 2px 6px rgb(54, 54, 54);
+}
+
+main p {
+    font-size: clamp(.9rem, 1.25vw, 2rem);
+    line-height: 1.5rem;
 }
 
 .main-text-area {
@@ -314,8 +323,11 @@ footer i {
 
     .jumbo-text-area {
         text-align: center;
-        left: 50%;
-        top: 55%;
+        position: static;
+        transform: none;
+        padding-top: 30%;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .btn-jumbo-1 {
@@ -330,8 +342,35 @@ footer i {
     }
 
     .logo {
-        margin-top: -0.25rem;
+        margin-top: 0rem;
         margin-left: 1.5rem;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    main img {
+        width: 10rem;
+        z-index: 9;
+        border: 5px solid var(--clr-btn);
+        border-radius: 1000px;
+        box-shadow: 3px 3px 10px rgb(29, 29, 29);
+
+        position: absolute;
+
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-text-area {
+        padding-top: 15rem;
+        margin: 0 1rem;
+    }
+
+    #contact-me {
+        padding-top: 2rem;
     }
 }
 

@@ -36,3 +36,30 @@ menuIcon.onclick = function() {
     }
 }
 
+/* Closes hamburger menu when a nav link is clicked */
+
+const hamburgerMenuLink1 = document.getElementById('hamb-link-1');
+const hamburgerMenuLink2 = document.getElementById('hamb-link-2');
+const hamburgerMenuLink3 = document.getElementById('hamb-link-3');
+const hamburgerMenuLink4 = document.getElementById('hamb-link-4');
+
+hamburgerMenuLink1.onclick = function() {
+    mobileNav.classList.add('display-none');
+    jumboText.classList.remove('display-none');
+}
+
+hamburgerMenuLink2.onclick = function() {
+    mobileNav.classList.add('display-none');
+    jumboText.classList.remove('display-none');
+}
+
+hamburgerMenuLink3.onclick = function() {
+    mobileNav.classList.add('display-none');
+    jumboText.classList.remove('display-none');
+}
+
+hamburgerMenuLink4.onclick = function() {
+    mobileNav.classList.add('display-none');
+    jumboText.classList.remove('display-none');
+}
+

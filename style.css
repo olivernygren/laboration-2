@@ -18,7 +18,7 @@ body {
     --clr-text-dark: rgb(71, 71, 71);
     --clr-text-tint: rgb(200, 200, 200);
     --clr-orange-gradient: linear-gradient(90deg, rgba(250,157,63,1) 0%, rgba(255,167,0,1) 48%, rgba(255,210,0,1) 100%);
-    --clr-active-header: rgb(140, 0, 255);
+    --clr-active-header: rgb(121, 55, 243);
 }
 
 a {
@@ -142,20 +142,16 @@ nav a:hover {
 
 .hamburger-menu-nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
     flex-direction: column;
-    background-color: var(--clr-text-dark);
+    background-color: var(--clr-active-header);
     height: 100vh;
-    padding-top: 2rem;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 5rem;
 }
 
 .hamburger-menu-nav a {
-    padding: 2rem 0;
-    font-size: 20px;
-}
-
-.hamburger-menu-nav {
     padding: 2rem 0;
     font-size: 20px;
 }
@@ -214,7 +210,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     position: relative;
     z-index: 10;
 }
@@ -306,7 +302,7 @@ nav a:hover {
 /* MAIN ====================================================== */
 
 main {
-    background-image: url(./Filer/Bilder/palm-trees-dark.jpg);
+    background-image: url(./Filer/Bilder/abstract-bg-purple.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -314,7 +310,7 @@ main {
     z-index: 5;
     position: relative;
 
-    background-color: var(--clr-text-dark);
+    background-color: var(--clr-text-light);
 }
 
 main img {
@@ -329,11 +325,10 @@ main img {
 }
 
 main h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.25rem, 3.5vw, 3rem);
+    font-size: clamp(1.25rem, 3vw, 2.5rem);
     margin: 0;
-    font-weight: 800;
-    text-shadow: 2px 2px 6px rgb(54, 54, 54);
+    font-weight: 500;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.493);
 }
 
 main p {
@@ -348,26 +343,49 @@ main p {
     margin-left: 5rem;
     margin-right: 16rem;
     z-index: 10;
-
-    position: relative;
 }
 
 /* FOOTER ============================================================= */
 
 footer {
-    background-color: var(--clr-text-tint);
-    text-align: center;
+    background-color: var(--clr-text-dark);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-section-1, .footer-section-2, .footer-section-3 {
+    border: 1px solid black;
+    width: 33.3%;
+    padding-inline-start: 2rem;
+    color: white;
+}
+
+.footer-section-1 h4, .footer-section-2 h4, .footer-section-3 h4 {
+    text-align: left;
 }
 
 footer i {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     background-color: var(--clr-btn);
-    padding: 0.8rem;
+    padding: 0.7rem;
     border-radius: 100px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.438);
     cursor: pointer;
     transition: all 300ms ease-in-out 0s;
-    margin: 2.5rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.fa-linkedin {
+    background-color: rgb(10, 102, 194);
+}
+
+.fa-github {
+    background-color: black;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 footer i:hover {
@@ -380,7 +398,7 @@ footer i:hover {
 
     Hamb-meny animation
     lägg till nummer vid klick på telefon-ikonen i footer
-    hitta nytt tysnitt / byt typsnitt på rubriker eller på logga, ej samma!
+    ändra main layout
 
 */
 

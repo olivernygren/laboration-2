@@ -18,6 +18,7 @@ body {
     --clr-text-dark: rgb(71, 71, 71);
     --clr-text-tint: rgb(200, 200, 200);
     --clr-orange-gradient: linear-gradient(90deg, rgba(250,157,63,1) 0%, rgba(255,167,0,1) 48%, rgba(255,210,0,1) 100%);
+    --clr-active-header: rgb(140, 0, 255);
 }
 
 a {
@@ -69,7 +70,7 @@ header {
 header.active {
     text-align: center;
     height: 5rem;
-    background-color: rgb(140, 0, 255);
+    background-color: var(--clr-active-header);
     /* background-color: white; */
     width: 100%;
     z-index: 10000;
@@ -147,9 +148,6 @@ nav a:hover {
     background-color: var(--clr-text-dark);
     height: 100vh;
     padding-top: 2rem;
-
-    transition: all 200ms ease-in-out;
-    
 }
 
 .hamburger-menu-nav a {
@@ -247,7 +245,7 @@ nav a:hover {
     text-shadow: 2px 2px 6px rgba(54, 54, 54, 0.521);
 }
 
-/* EXPERIENCES ============================================== */
+/* EXPERIENCES SECTION ============================================== */
 
 .experiences {
     height: 25rem;
@@ -257,8 +255,15 @@ nav a:hover {
     background-color: rgb(243, 243, 243);
 }
 
+.experiences h3 {
+    text-transform: uppercase;
+    color: var(--clr-text-black);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
 .card {
-    height: 20rem;
+    height: 85%;
     width: 95%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px 7px #00000020;
@@ -268,6 +273,8 @@ nav a:hover {
 .card i {
     font-size: 1.75rem;
     background-color: rgb(228, 228, 228);
+    background-color: var(--clr-active-header);
+    color: var(--clr-text-light);
     padding: 0.8rem;
     border-radius: 100rem;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.37);
@@ -280,7 +287,12 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
+    padding-top: 4%;
+}
+
+.icons p {
+    font-size: clamp(0.75rem, 1vw, 2rem);
 }
 
 .icons ul {

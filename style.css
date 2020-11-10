@@ -115,7 +115,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--clr-text-tint);
+    color: var(--clr-btn);
     text-shadow: none;
 }
 
@@ -351,17 +351,21 @@ main p {
 /* FOOTER ============================================================= */
 
 footer {
-    background-color: var(--clr-text-dark);
+    background-color:  rgb(243, 243, 243);
     display: flex;
     justify-content: space-evenly;
+    border-top: 2px solid var(--clr-btn);
 }
 
 .footer-section-1, .footer-section-2, .footer-section-3 {
-    border: 1px solid black;
     width: 33.3%;
     padding-inline-start: 2rem;
-    color: white;
-    text-align: left;
+    color: var(--clr-text-black);
+    text-align: center;
+}
+
+.footer-section-1 {
+    flex-direction: column;
 }
 
 footer i {
@@ -373,12 +377,19 @@ footer i {
     transition: all 300ms ease-in-out 0s;
     margin-right: 1rem;
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
 }
 
 footer h4 {
-    font-size: clamp(.9rem, 1.5vw, 2rem);
+    font-size: 1.25rem;
     font-family: 'Signika', 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+
+footer p {
+    font-size: clamp(.9rem, 1vw, 2rem);
+    margin: 1rem 2rem;
 }
 
 .fa-linkedin {
@@ -398,20 +409,20 @@ footer h4 {
 }
 
 footer img {
-    height: 8rem;
-    float: right;
-    margin: 1rem;
+    height: 6rem;
     border: 3px solid var(--clr-btn);
     border-radius: 100rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.438);
+    margin: 1rem auto;
 }
 
 
 
 /* TO-DO LIST
 
-    Hamb-meny animation
-    lägg till nummer vid klick på telefon-ikonen i footer
-    ändra main layout
+    Hamb-meny animation, a bort mystiskt mellanrum, disable scroll när den är öppen
+
+
 
 */
 

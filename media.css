@@ -70,7 +70,7 @@
     }
 
     .jumbo-text-area {
-        padding-top: 35%;
+        padding-top: 30%;
     }
 
     footer i {
@@ -80,10 +80,6 @@
     .jumbo-bg {
         height: inherit;
         padding-bottom: 3rem;
-    }
-
-    .icons {
-        flex-direction: column;
     }
 }
 

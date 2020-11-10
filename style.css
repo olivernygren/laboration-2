@@ -228,7 +228,7 @@ nav a:hover {
 
 .jumbo-text-area p {
     /* text-shadow: 1px 1px 4px rgb(54, 54, 54); */
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.6em;
     font-size: clamp(1rem, 1.25vw, 2rem);
 }
@@ -252,6 +252,8 @@ nav a:hover {
 }
 
 .experiences h3 {
+    font-family: 'Signika', 'Montserrat';
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--clr-text-black);
     font-weight: 500;
@@ -268,7 +270,6 @@ nav a:hover {
 
 .card i {
     font-size: 1.75rem;
-    background-color: rgb(228, 228, 228);
     background-color: var(--clr-active-header);
     color: var(--clr-text-light);
     padding: 0.8rem;
@@ -313,19 +314,10 @@ main {
     background-color: var(--clr-text-light);
 }
 
-main img {
-    width: 16rem;
-    z-index: 9;
-    border: 5px solid var(--clr-btn);
-    border-radius: 1000px;
-    box-shadow: 3px 3px 10px rgb(29, 29, 29);
-    position: absolute;
-    top: 25%;
-    left: calc(100% - 18rem);
-}
-
 main h3 {
+    font-family: 'Signika', 'Montserrat', sans-serif;
     font-size: clamp(1.25rem, 3vw, 2.5rem);
+    letter-spacing: 3px;
     margin: 0;
     font-weight: 500;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.493);
@@ -358,9 +350,6 @@ footer {
     width: 33.3%;
     padding-inline-start: 2rem;
     color: white;
-}
-
-.footer-section-1 h4, .footer-section-2 h4, .footer-section-3 h4 {
     text-align: left;
 }
 
@@ -377,19 +366,27 @@ footer i {
 }
 
 .fa-linkedin {
-    background-color: rgb(10, 102, 194);
+    background: rgb(10, 102, 194);
+}
+
+.fa-envelope {
+    background: linear-gradient(180deg, rgba(28,111,241,1) 0%, rgba(26,198,251,1) 100%);;
 }
 
 .fa-github {
-    background-color: black;
+    background: black;
 }
 
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
-footer i:hover {
-    background-color: rgb(68, 149, 187);
+footer img {
+    height: 8rem;
+    float: right;
+    margin: 1rem;
+    border: 2px solid var(--clr-btn);
+    border-radius: 100rem;
 }
 
 

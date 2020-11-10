@@ -249,6 +249,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     background-color: rgb(243, 243, 243);
+    font-size: clamp(0.75rem, 1.1vw, 2rem);
 }
 
 .experiences h3 {
@@ -258,6 +259,7 @@ nav a:hover {
     color: var(--clr-text-black);
     font-weight: 500;
     font-size: 1.25rem;
+    margin-bottom: .5rem;
 }
 
 .card {
@@ -270,7 +272,7 @@ nav a:hover {
 
 .card i {
     font-size: 1.75rem;
-    background-color: var(--clr-active-header);
+    background-color: var(--clr-btn);
     color: var(--clr-text-light);
     padding: 0.8rem;
     border-radius: 100rem;
@@ -288,6 +290,11 @@ nav a:hover {
     padding-top: 4%;
 }
 
+.icons h5 {
+    font-family: 'Signika';
+    font-size: .9rem;
+}
+
 .icons p {
     font-size: clamp(0.75rem, 1vw, 2rem);
 }
@@ -299,6 +306,10 @@ nav a:hover {
 .icons li {
     list-style: none;
 }
+
+
+
+
 
 /* MAIN ====================================================== */
 
@@ -354,7 +365,6 @@ footer {
 }
 
 footer i {
-    font-size: 1.5rem;
     background-color: var(--clr-btn);
     padding: 0.7rem;
     border-radius: 100px;
@@ -363,6 +373,12 @@ footer i {
     transition: all 300ms ease-in-out 0s;
     margin-right: 1rem;
     margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+footer h4 {
+    font-size: clamp(.9rem, 1.5vw, 2rem);
+    font-family: 'Signika', 'Montserrat', sans-serif;
 }
 
 .fa-linkedin {
@@ -385,7 +401,7 @@ footer img {
     height: 8rem;
     float: right;
     margin: 1rem;
-    border: 2px solid var(--clr-btn);
+    border: 3px solid var(--clr-btn);
     border-radius: 100rem;
 }
 

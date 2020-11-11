@@ -8,7 +8,7 @@
 
     .jumbo-bg {
         height: 100vh;
-        background-image: url(./Filer/Bilder/abstract-bg-purple2-tall.png);
+        background-image: url(./Filer/Bilder/abstract-bg-purple2-tall-big.png);
     }
 
     .jumbo-text-area {
@@ -38,7 +38,7 @@
 
     main {
         text-align: center;
-        background-image: url(./Filer/Bilder/abstract-bg-purple-tall.png);
+        background-image: url(./Filer/Bilder/abstract-bg-purple-tall-big.png);
     }
 
     main img {

@@ -31,11 +31,13 @@ menuIcon.onclick = function() {
         mobileNav.classList.remove('display-none'); /* visa nav:en */
         // jumboText.classList.add('display-none'); /* ta bort jumbo-texten */
         html.classList.add('remove-scroll');
+        headerMobile.classList.add('active');
 
     } else { 
         mobileNav.classList.add('display-none'); /* dölj nav:en */
         // jumboText.classList.remove('display-none'); /* visa jumbo-texten */
         html.classList.remove('remove-scroll');
+        headerMobile.classList.remove('active');
     }
 }
 

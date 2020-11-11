@@ -359,7 +359,6 @@ footer {
 
 .footer-section-1, .footer-section-2, .footer-section-3 {
     width: 33.3%;
-    padding-inline-start: 2rem;
     color: var(--clr-text-black);
     text-align: center;
 }

@@ -41,20 +41,6 @@
         background-image: url(./Filer/Bilder/abstract-bg-purple-tall-big.png);
     }
 
-    main img {
-        width: 10rem;
-        z-index: 9;
-        border: 5px solid var(--clr-btn);
-        border-radius: 1000px;
-        box-shadow: 3px 3px 10px rgb(29, 29, 29);
-
-        position: absolute;
-
-        top: 14%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
     .main-text-area {
         margin: 0 1rem;
     }
@@ -94,6 +80,7 @@
     .jumbo-bg {
         height: inherit;
         padding-bottom: 3rem;
+        background-attachment: unset;
     }
 }
 

@@ -69,7 +69,7 @@ header {
 
 header.active {
     text-align: center;
-    height: 5.2rem;
+    height: 5rem;
     background-color: var(--clr-active-header);
     width: 100%;
     z-index: 10000;
@@ -83,7 +83,7 @@ header.active {
 .logo {
     width: 30%;
     float: left;
-    line-height: 5.2rem;
+    line-height: 4.9rem;
     white-space: nowrap;
 }
 

@@ -47,21 +47,25 @@ const hamburgerMenuLink4 = document.getElementById('hamb-link-4');
 
 hamburgerMenuLink1.onclick = function() {
     mobileNav.classList.add('display-none');
-    jumboText.classList.remove('display-none');
+    headerMobile.classList.remove('active');
+    html.classList.remove('remove-scroll');
 }
 
 hamburgerMenuLink2.onclick = function() {
     mobileNav.classList.add('display-none');
-    jumboText.classList.remove('display-none');
+    headerMobile.classList.remove('active');
+    html.classList.remove('remove-scroll');
 }
 
 hamburgerMenuLink3.onclick = function() {
     mobileNav.classList.add('display-none');
-    jumboText.classList.remove('display-none');
+    headerMobile.classList.remove('active');
+    html.classList.remove('remove-scroll');
 }
 
 hamburgerMenuLink4.onclick = function() {
     mobileNav.classList.add('display-none');
-    jumboText.classList.remove('display-none');
+    headerMobile.classList.remove('active');
+    html.classList.remove('remove-scroll');
 }
 

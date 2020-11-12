@@ -374,7 +374,8 @@ footer i {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.438);
     cursor: pointer;
     transition: all 300ms ease-in-out 0s;
-    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -419,8 +420,8 @@ footer img {
 
 /* TO-DO LIST
 
-    Hamb-meny animation, ta bort mystiskt mellanrum
-
+    Hamb-meny animation
+    avstånd i jumbotron-text i mobil landscape
 
 
 */

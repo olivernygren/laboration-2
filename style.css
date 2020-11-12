@@ -345,7 +345,6 @@ footer {
     background-color:  rgb(243, 243, 243);
     display: flex;
     justify-content: space-evenly;
-    border-top: 2px solid var(--clr-btn);
 }
 
 .footer-section-1, .footer-section-2, .footer-section-3 {

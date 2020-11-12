@@ -7,7 +7,8 @@
     }
 
     .jumbo-bg {
-        height: 100vh;
+        height: fit-content;
+        /* height: 100vh; */
         background-image: url(./Filer/Bilder/abstract-bg-purple2-tall-big.png);
     }
 
@@ -16,6 +17,7 @@
         position: static;
         transform: none;
         padding-top: 30%;
+        padding-bottom: 20%;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -52,7 +54,7 @@
     .footer-section-1 {
         display: none;
     }
-    
+
     .footer-section-2 {
         display: none;
     }

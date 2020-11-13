@@ -1,0 +1,34 @@
+
+
+/* BUTTONS ======================================================== */
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--clr-btn);
+    border: 2px solid var(--clr-btn);
+    border-radius: 50rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out 0s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-nav {
+    margin-left: 1rem;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--clr-btn);
+    color: var(--clr-text-light);
+}
+
+.btn-jumbo-2 {
+    margin-left: 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--clr-text-light);
+}
+
+.btn-jumbo-2:hover {
+    background-color: var(--clr-btn);
+    color: var(--clr-text-white);
+}

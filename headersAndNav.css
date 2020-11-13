@@ -1,0 +1,94 @@
+
+
+
+/* HEADER ========================================================== */
+
+header {
+    text-align: center;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
+    transition: all 500ms;
+}
+
+header.active {
+    text-align: center;
+    height: 5rem;
+    background-color: var(--clr-active-header);
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
+    transition: all 400ms;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.308)
+}
+
+/* NAV ============================================================= */
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 4.9rem;
+    white-space: nowrap;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2.25vw, 3rem);
+    font-family: 'Norican', serif;
+    font-weight: 200;
+    color: var(--clr-text-light);
+}
+
+nav {
+    float: right;
+    line-height: 5rem;
+    margin-right: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: clamp(0.75rem, 1.1vw, 2rem);
+    margin: 0 15px;
+    color: var(--clr-text-light);
+    transition: all 300ms ease-in-out 0s;
+}
+
+nav a:hover {
+    color: var(--clr-btn);
+    text-shadow: none;
+}
+
+/* HAMBURGER MENU ================================================ */
+
+.hamburger-menu {
+    text-align: center;
+}
+
+#menu-icon {
+    color: white;
+    float: right;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: var(--clr-btn);
+    box-shadow: 2px 2px 6px rgba(66, 66, 66, 0.418);
+    margin-top: 1.35rem;
+    margin-right: 1rem;
+}
+
+.hamburger-menu-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-active-header);
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 4rem;
+}
+
+.hamburger-menu-nav a {
+    padding: 2rem 0;
+    font-size: 20px;
+}

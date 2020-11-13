@@ -28,13 +28,14 @@ const html = document.querySelector('html');
 menuIcon.onclick = function() {
 
     if (mobileNav.classList.contains('display-none')) {
+        
         mobileNav.classList.remove('display-none'); /* visa nav:en */
-        mobileNav.classList.add('display'); /* visa nav:en */
-        html.classList.add('remove-scroll');
+        html.classList.add('remove-scroll');       
         headerMobile.classList.add('active');
+
     } else { 
+        
         mobileNav.classList.add('display-none'); /* dölj nav:en */
-        mobileNav.classList.remove('display'); /* dölj nav:en */
         html.classList.remove('remove-scroll');
         headerMobile.classList.remove('active');
     }
@@ -49,28 +50,24 @@ const hamburgerMenuLink4 = document.getElementById('hamb-link-4');
 
 hamburgerMenuLink1.onclick = function() {
     mobileNav.classList.add('display-none');
-    mobileNav.classList.remove('display');
     headerMobile.classList.remove('active');
     html.classList.remove('remove-scroll');
 }
 
 hamburgerMenuLink2.onclick = function() {
     mobileNav.classList.add('display-none');
-    mobileNav.classList.remove('display');
     headerMobile.classList.remove('active');
     html.classList.remove('remove-scroll');
 }
 
 hamburgerMenuLink3.onclick = function() {
     mobileNav.classList.add('display-none');
-    mobileNav.classList.remove('display');
     headerMobile.classList.remove('active');
     html.classList.remove('remove-scroll');
 }
 
 hamburgerMenuLink4.onclick = function() {
     mobileNav.classList.add('display-none');
-    mobileNav.classList.remove('display');
     headerMobile.classList.remove('active');
     html.classList.remove('remove-scroll');
 }

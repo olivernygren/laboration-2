@@ -8,7 +8,6 @@
 
     .jumbo-bg {
         height: fit-content;
-        /* height: 100vh; */
         background-image: url(./Filer/Bilder/abstract-bg-purple2-tall-big.png);
     }
 
@@ -44,7 +43,9 @@
     }
 
     .main-text-area {
-        margin: 0 1rem;
+        /* margin: 0 1rem; */
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #contact-me {

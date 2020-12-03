@@ -41,6 +41,7 @@
     main {
         text-align: center;
         background-image: url(./Filer/Bilder/abstract-bg-purple-tall-big.png);
+        background-attachment: scroll;
     }
 
     .main-text-area {
@@ -73,6 +74,10 @@
         top: 10%;
     }
 
+    main {
+        background-attachment: scroll;
+    }
+
     .jumbo-text-area {
         padding-top: 30%;
     }
@@ -92,6 +97,10 @@
 @media (max-width: 340px) {
     main img {
         top: 9%;
+    }
+
+    main {
+        background-attachment: scroll;
     }
 
     .jumbo-text-area {

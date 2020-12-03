@@ -9,6 +9,7 @@
     .jumbo-bg {
         height: fit-content;
         background-image: url(./Filer/Bilder/abstract-bg-purple2-tall-big.png);
+        background-attachment: scroll;
     }
 
     .jumbo-text-area {
@@ -83,7 +84,7 @@
     .jumbo-bg {
         height: inherit;
         padding-bottom: 3rem;
-        background-attachment: unset;
+        background-attachment: scroll;
     }
 }
 
@@ -115,6 +116,7 @@
     .jumbo-bg {
         height: inherit;
         padding-bottom: 3rem;
+        background-attachment: scroll;
     }
 }
 
